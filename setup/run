@@ -1,4 +1,4 @@
 #! /bin/bash
 
 DIR="$HOME/docker-analysis"
-docker run -v $DIR/notebooks:/notebooks -v $DIR/logfile:/logfile -v $DIR/www:/var/www/html -p 8880:80 -p 8888:8888 -d ipython-notebook-runipy
+docker run -v $DIR/notebooks:/notebooks -v $DIR/logfile:/logfile -v $DIR/www:/var/www/html -p 8080:80 -p 8888:8888 -d ipython-notebook-runipy
