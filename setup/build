@@ -1,4 +1,4 @@
 #! /bin/bash
 
-sudo docker rmi ipython-notebook-runipy
-sudo docker build -t ipython-notebook-runipy .
+docker rmi ipython-notebook-runipy
+docker build -t ipython-notebook-runipy .
