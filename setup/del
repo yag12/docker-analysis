@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Delete all containers
+containers=$(sudo docker ps -a -q)
+if [ "$containers" ]
+then
+    docker rm -f $containers
+fi
