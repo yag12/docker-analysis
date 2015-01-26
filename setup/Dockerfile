@@ -2,6 +2,7 @@ FROM vistrcm/ipython-notebook
 
 USER root
 
+ADD ./sources.list /etc/apt/sources.list
 RUN apt-get -qq update && apt-get -qq upgrade
 RUN apt-get -qq install apache2 php5
 RUN pip install runipy
