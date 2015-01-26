@@ -5,6 +5,7 @@ USER root
 RUN apt-get -qq update && apt-get -qq upgrade
 RUN apt-get -qq install apache2 php5
 RUN pip install runipy
+RUN pip install PyMySQL
 
 RUN mkdir /logfile
 
